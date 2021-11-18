@@ -7,11 +7,12 @@
 
 ## Prometheus
 For running prometheus I used Grafana Cloud. To sync the app with Grafana Cloud, you need to update: url, username and password in prometheus.yml. API key you can generate in Grafana Cloud
+
 "remote_write:
-- url: <Your Grafana.com API URL>
-  basic_auth:
-    username: <Your Grafana.com API username>
-    password: <Your Grafana.com API Key>"
+  - url: <Your Grafana.com API URL>
+    basic_auth:
+      username: <Your Grafana.com API username>
+      password: <Your Grafana.com API Key>"
 
 ## Important notes/issues
 - In case you are not able to access http://localhost:5000/, then execute flask from the project folder by running command: "flask run"
